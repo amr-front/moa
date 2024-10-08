@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #28223f;
+}
+
+:root {
+  --font-color: #b3b8cd;
+  --button-color: #03bfbc;
+}
+
+main {
+  max-width: 350px;
+  width: 100%;
+  min-height: 430px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 40% 1fr;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+.pic {
+  background-image: url(https://pbs.twimg.com/media/E6Rj1zHXIAMSlEg.jpg);
+  /* https://th.bing.com/th/id/R.19192eb0c1346247d8beb8f66d9290ac?rik=Zgv%2f54Cg6dHO2A&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f5%2f5%2f2%2f1245876-beautiful-geometric-abstract-wallpaper-3000x2000.jpg&ehk=sHm13t%2fqZ07JCyq7nFOH6IG0pSw2nraTiePdi4ecEok%3d&risl=&pid=ImgRaw&r=0 */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+figure {
+  width: 120px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #28223f;
+  border-radius: 50%;
+  transform: translate(20px, 60px);
+}
+
+img {
+  max-width: 85%;
+  width: 100%;
+  height: 85%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about {
+  padding: 10px 25px 0 25px;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: end;
+  padding-block: 20px;
+}
+
+p {
+  text-align: center;
+  line-height: 23px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.butn {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.butn > * {
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.back-g {
+  background-color: #03bfbc;
+  color: #231e39;
+  border: 1px solid var(--button-color);
+}
+
+.back-g:hover {
+  background-color: transparent;
+  color: var(--button-color);
+}
+
+.normal {
+  background-color: transparent;
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
+}
+
+.normal:hover {
+  background-color: var(--button-color);
+  color: #231e39;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.contact ul {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--button-color);
+}
+
+li {
+  transition: 0.5s;
+}
+li:hover {
+  transform: translateY(-10px);
+}
